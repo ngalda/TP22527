@@ -93,3 +93,15 @@ nav ul li a:hover {
     background-color: purple;
     color: white;
 }
+
+
+/* ACA VA LA IMAGEN DE FONDO*/
+
+.fondo {
+    max-width: 70%;
+    max-height:  70%;
+}
+
+.comentario {
+    
+}
