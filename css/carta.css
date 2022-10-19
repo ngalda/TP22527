@@ -1,0 +1,256 @@
+/*fondo y header*/
+body {
+    background-color: rgb(219, 219, 219);
+    text-align: center;
+	font-family: Helvetica;
+}
+
+.logo {
+    max-width: 20%;
+    max-height: 20%;
+    cursor: pointer;
+}
+
+/*nav {
+    height: 60px;
+    font-family: Helvetica;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    padding: 18px;
+    overflow: hidden;
+    background-color: transparent; 
+}
+
+nav ul li{
+    float: left;
+    margin-top: 20px;
+}
+
+nav ul li a {    
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;   
+}
+
+nav ul li a:hover {
+    background-color: purple;
+    color: white;
+}
+*/
+.centrado{
+	margin:0 auto; 
+	padding: 0 1em;
+}
+
+@media screen and (min-width: 52em){ 
+	.centrado{			
+		max-width: 52em;
+	}
+}
+
+.menu-section{
+	padding-bottom: 2em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid hsl(0, 0%);
+}
+
+.menu ul{
+	list-style: none;
+  display: inline-block;
+  padding: 18px;
+  overflow: hidden;
+  background-color: transparent; 
+
+}
+
+.menu li a {
+	display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+.menu li a:hover {
+	background-color: purple;
+  color: white;
+}
+ 
+ /*De aca para abajo Flexbox parte dos de la clase*/
+ .menu-simple ul{
+ 	display: flex;  
+ 	flex-wrap: wrap;
+ 	justify-content:space-between;
+  height: 60px;
+  font-family: Helvetica;
+ }					
+
+ .menu-simple li{
+ 	flex:1 0 auto;
+ 	text-align: center;
+ }
+
+
+/*cajas*/
+
+.contenedor{
+    display:flex;
+    border: 200 px;
+    padding: 0% 5% 8%;
+    width: 100%;
+    height: 95 px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+  
+  .caja{
+    flex:1; 
+    overflow: hidden;
+    margin: 5px;
+    flex-wrap: wrap;
+    line-height: 0;
+    box-shadow: 0 20px 30px rgb(237, 26, 89);
+    transition: all 600ms;
+    
+  }
+
+  .caja .img{
+    width: 100%;
+    height: cal(100% - 10 vh);
+    object-fit: cover;
+    transition: all 300ms;
+  }
+  
+  .caja > span{
+    font-size: 12px;
+    font-family:Helvetica;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+
+  .caja:hover{
+    flex:50%;
+}
+
+.caja:hover> img{
+    width: 100%;
+    height: 1000%;  
+  }
+
+/*footer*/
+
+
+.pie_pagina{
+  width: 100%;
+  background: hsl(0, 0%, 0%);
+}
+
+.pie_pagina .grupo1{
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+ }
+
+ .pie_pagina .grupo1 .box figure img{
+  width: 60%;
+  height: 60%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 10px;
+ }
+
+ .pie_pagina .grupo1 .box h2{
+  font-size: 20px;
+  color: beige;
+  margin-bottom: 25px;
+ }
+
+ .pie_pagina .grupo1 .box p{
+  font-size: 10px;
+  color: beige;
+  margin-bottom: 15px;
+  text-decoration: none;
+ }
+
+ .red_social{
+  font-size: 250%;
+
+ }
+  
+   .pie_pagina .grupo1 .box h2{
+    font-size: 20px;
+    color: beige;
+    margin-bottom: 18px;
+   }
+  
+   .pie_pagina .grupo1 .box p{
+    font-size: 10px;
+    color: beige;
+    margin-bottom: 18px;
+    text-decoration: none;
+   }
+  
+   .red_social{
+    font-size: 100%;
+     }
+
+     @media screen and (max-width: 900px) {
+	.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+    }
+    
+    @media screen and (max-width: 700px) {
+      .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+    }
+
+   
+@media screen and (max-width: 800px){
+  .pie_pagina .grupo1{
+    width: 90%;
+    padding: 35px 0px;
+    grid-template-columns: repeat(1,1fr); 
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 952px){
+  .logo{
+    padding-left: 20px;
+ }
+ nav ul li a{
+  font-size: 16px;
+ }
+
+}
+
+
+  
+   
+

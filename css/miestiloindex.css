@@ -1,7 +1,7 @@
 body {
     background-color: rgb(219, 219, 219);
     text-align: center;
-}
+} 
 
 .logo {
     max-width: 20%;
@@ -38,7 +38,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: purple;
     color: white;
-}
+} 
 
 /* ACA COMIENZA EL CSS DE RESERVAR*/
 
@@ -102,6 +102,15 @@ nav ul li a:hover {
     max-height:  70%;
 }
 
-.comentario {
-    
+/*.comentario {
+
+} */
+
+
+/* ACA COMIENZA EL FOOTER */
+
+footer {
+	/* background-color: #000000; */
+	width: 100%;
+	height: auto;
 }

@@ -1,69 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es ">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="https://kit.fontawesome.com/ea374b3f34.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/miestiloindex.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilocontacto.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="icon" href="img/pbicono.ico">
 
-    <link rel="stylesheet" href="css/contacto.css">
+    <script src="formulariocontacto.js"></script>
 
-    <title>Contacto</title>
+    <title>PAJAROBOBO</title>
 </head>
-<body>
-    
-    <section class="contacto" id="contacto">
-        <h2>Contactame</h2>
-        <div class="formulario-contacto-contenedor">
-          <div class="formulario-contacto">
-            <form action="https://formspree.io/f/xyylngw" method="POST">
-              <div class="control-formulario">
-                <label for="name">Nombre</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="sender-name"
-                  placeholder="Escribe tu nombre"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="control-formulario">
-                <label for="email">Correo Electrónico</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="sender-email"
-                  placeholder="Ingreso tu correo electrónico"
-                  class="input-field"
-                  required
-                />
-              </div>
-              <div class="control-formulario">
-                <label for="mensaje">Mensaje</label>
-                <textarea
-                  id="mensaje"
-                  cols="60"
-                  rows="10"
-                  placeholder="Escribe tu mensaje"
-                  name="mensaje"
-                  class="input-field"
-                  required
-                ></textarea>
-              </div>
-              <input
-                type="submit"
-                value="Enviar"
-                id="submit-btn"
-                class="submit-btn"
-              />
-            </form>
-          </div>
-        </div>
-      </section>
 
+<body>
+
+
+    <header>
+
+        <a href="index.html"><img class="logo" src="img/pb logo.png" alt="pajarobobologo"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a class="activo" href="sobrenosotros.html">SOBRE NOSOTROS</a>
+                </li>
+                <li>
+                    <a class="activo" href="carta.html">CARTA</a>
+                </li>
+                <li>
+                    <a class="activo" href="reservaahora.html">HACER RESERVA</a>
+                </li>
+                <li>
+                    <a class="activo" href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <br><br>
+
+
+    <div class="contenedor">
+        <div id="contac">
+
+
+            <form action="mailto:lauraserato@gmail.com" class="form" method="post" enctype="text/plain" name="formu">
+                <div class="form-header">
+                    <h1 class="form-title">C<span>ontacto</span></h1>
+                </div>
+
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" class="form-input" placeholder="Escriba su nombre" minlength="1"
+                    required>
+
+                <label for="email" class="form-label">e-mail:</label>
+                <input type="email" id="email" class="form-input" placeholder="Escriba su direccion de email"
+                    minlength="1" required>
+
+                <label for="tel" class="form-label">Telefono:</label>
+                <input type="tel" id="tel" class="form-input" placeholder="Escriba su numero telefonico" minlength="1"
+                    required>
+
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea id="mensaje" class="form-textarea" placeholder="Escriba su mensaje" minlength="1"
+                    maxlength="80" required>
+                </textarea>
+
+                <input type="submit" class="btn-submit" id="btn-submit" value="Enviar Consulta" onclick="validacion()">
+
+
+            </form>
+
+            <div id="f1">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.2023229737447!2d-58.386885385195356!3d-34.59904506475699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac78fc9324b%3A0xaa839e92b96f10db!2sAv.%20C%C3%B3rdoba%201245%2C%20C1012AAY%20CABA!5e0!3m2!1ses!2sar!4v1666040642398!5m2!1ses!2sar"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div id="cont-horarios">
+                <div id="horarios">
+                    <img class="imafooter" src="img/pajaro bobo icono y footer.png">
+                </div>
+                <div class="horarios">
+                    <p><u>Horarios</u> <br> Lun. a Vie. de 11:30hs a 23:00hs <br> Sab. y Dom. de 11:30hs a 1:00hs</p>
+                </div>
+                <div class="horarios">
+                    <p><u>Reservas </u><br> <b>tel.:011 54961230</b></p>
+                </div>
+                <div class="horarios">
+                    <p><u>Encontranos en</u></p>
+                        <a href="https://www.facebook.com/" title="Facebook" target="_blank">
+                            <button><i class="fa-brands fa-facebook"></i></button></a>
+
+                        <a href="https://www.instagram.com/" title="Instagram" target="_blank">
+                            <button><i class="fa-brands fa-instagram"></i></button></a>
+
+                        <a href="https://twitter.com/?lang=es" title="Twitter" target="_blank">
+                            <button><i class="fa-brands fa-twitter"></i></button></a>
+                </div>
+            </div>
+
+            <div id="copy">
+                <hr>
+                </hr>
+                <h6> &copy; 2022 por GrupoCAC </h6>
+            </div>
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
